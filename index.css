@@ -1,0 +1,158 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 2em;
+}
+
+.container-1 {
+    display: grid;
+    height: 470px;
+    margin: 50px 15px;
+    color: white;
+    border-radius: 15px;
+    background-color: #F96699;
+    align-content: center;
+    justify-content: center;
+}
+
+.container-2 {
+
+    height: 562px;
+    padding: 50px;
+    text-align: center;
+    margin: 50px 15px;
+    border-radius: 15px;
+    color: white;
+    background-color: #38CCCC;
+}
+
+.container-5 {
+    height: 520px;
+    margin: 50px 15px;
+    border-radius: 15px;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #99CCCC;
+}
+
+.entry {
+    display: grid;
+    justify-items: start;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.container-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.list1,
+.list2,
+.list3,
+.list4 {
+    text-decoration: none;
+}
+
+.container-3 {
+    display: grid;
+    margin-bottom: 20px;
+
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.list1,
+.list2,
+.list3 {
+    color: #38CCCC;
+}
+
+.list4 {
+    color: #F96699;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 450px) {
+    .container {
+        max-width: 970px;
+        margin: 0 auto;
+    }
+
+    .container-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .col1{
+        
+    display: grid;
+    align-items: center;
+
+    }
+    .col2{
+        
+    display: grid;
+    align-items: center;
+    align-content: center;
+
+    }
+
+    .container-3 {
+        display: grid;
+        margin-bottom: 20px;
+        text-align: end;
+        justify-items: end;
+    }
+
+
+    .container-4 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 10px 50px 80px 50px;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .list1,
+    .list2,
+    .list3,
+    .list4 {
+        text-decoration: none;
+        padding: 15px;
+    }
+    .container-5{
+        height: 298px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "column3 column2 column1";
+    }
+    .contact{
+        grid-area: column1;
+        display: grid;
+        align-content: center;
+    }
+    .address{
+        grid-area: column2;
+        display: grid;
+    }
+    .entry{
+        grid-area: column3;
+    }
+}
